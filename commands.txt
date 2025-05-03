@@ -1,0 +1,16 @@
+
+
+python3 -m venv venv => Create a virtual environment
+
+source venv/bin/activate => Activate the virtual environment
+deactivate => Deactivate the virtual environment 
+
+pip install -r requirements.txt => Install dependencies from requirements.txt
+
+
+python app.py => Run your Python app
+pytest  => Run your test script
+
+
+docker build -t python-app-image . => Build a Docker image
+docker run -d --name python-app-container -p 5005:5001 python-app-image => Run the Docker container
